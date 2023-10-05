@@ -66,3 +66,4 @@ yarn dev
 
 ## License
 [MIT](https://github.com/recoluan/vuepress-theme-reco/blob/master/LICENSE)
+comment: true

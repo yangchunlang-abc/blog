@@ -6,8 +6,8 @@ modules:
   - Footer
 blog:
   socialLinks:
-    - { icon: 'LogoGithub', link: 'https://github.com/recoluan' }
-    - { icon: 'LogoWechat', link: 'https://github.com/recoluan' }
+    - { icon: 'LogoGithub', link: 'https://github.com/yangchunlang-abc' }
+    - { icon: 'Chat', link: 'tencent://message/?uin=2311129161&Site=&Menu=yes' }
 footer: # 底部模块的配置
   record: 域名备案文案
   recordLink: 域名备案地址

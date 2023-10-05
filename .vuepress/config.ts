@@ -1,5 +1,4 @@
 import { defineUserConfig } from "vuepress";
-import type { DefaultThemeOptions } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 
 export default defineUserConfig({
@@ -11,8 +10,19 @@ export default defineUserConfig({
     '/': {
       lang: 'zh-CN'
     }
-},
+  },
   theme: recoTheme({
+    //评论
+    commentConfig: {
+      type: 'valine',
+      options: {
+        appId: 'vMh7VQqrupndwydY8ZQ3TmqM-gzGzoHsz', // your appId
+        appKey: '5zPY8ESOBS55OC9kfa96ww5K', // your appKey
+        hideComments: false, // 全局隐藏评论，默认 false
+        avatar: 'wavatar',
+        requiredFields:[]
+      },
+    },
     style: "@vuepress-reco/style-default",
     logo: "/logo.png",
     author: "Saul",
@@ -34,3 +44,4 @@ export default defineUserConfig({
   }),
 
 });
+
