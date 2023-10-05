@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2cac1767","path":"/docs/friendship-link.html","title":"友情链接","lang":"zh-CN","frontmatter":{"title":"友情链接","date":"2023/10/06"},"headers":[],"git":{"createdTime":1696522961000,"updatedTime":1696522961000,"contributors":[{"name":"gogo","email":"2311129161@qq.com","commits":1}]},"filePathRelative":"docs/friendship-link.md"}');export{e as data};
