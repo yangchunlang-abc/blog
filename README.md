@@ -1,9 +1,13 @@
 ---
 home: true
 modules:
+  - BannerBrand
   - Blog
   - MdContent
   - Footer
+bannerBrand: # bannerBrand 模块的配置
+  title: Better Call Saul
+  bgImage: '/bg.svg'
 blog:
   socialLinks:
     - { icon: 'LogoGithub', link: 'https://github.com/yangchunlang-abc' }
