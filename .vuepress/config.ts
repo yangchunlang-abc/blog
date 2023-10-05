@@ -3,6 +3,7 @@ import type { DefaultThemeOptions } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 
 export default defineUserConfig({
+  dest: 'docs/.vuepress/dist',
   base: '/blog/',
   title: "Saul的博客",
   description: "Sual的博客",
