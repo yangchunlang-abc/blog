@@ -3,8 +3,14 @@ import type { DefaultThemeOptions } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 
 export default defineUserConfig({
+  base: '/blog/',
   title: "Saul的博客",
   description: "Sual的博客",
+  locales: {
+    '/': {
+      lang: 'zh-CN'
+    }
+},
   theme: recoTheme({
     style: "@vuepress-reco/style-default",
     logo: "/logo.png",
