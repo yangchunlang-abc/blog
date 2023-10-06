@@ -11,7 +11,7 @@ export default defineUserConfig({
   ], 
  
   dest: 'docs/.vuepress/dist',
-  base: '/',
+  base: '/blog/',
   title: "Saul's Blog",
   description: "Sual的博客",
   locales: {

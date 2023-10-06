@@ -10,7 +10,7 @@ bannerBrand: # bannerBrand 模块的配置
   tagline: 一个人的眼界取决于他的思维和认知以及他所认识的人和存在的环境
   bgImage: '/bg.svg'
   buttons:
-    - { text: About Saul, link: '/docs/about-me' }
+    - { text: About Saul, link: '/blog/docs/about-me' }
 blog:
   socialLinks:
     - { icon: 'LogoGithub', link: 'https://github.com/yangchunlang-abc' }
