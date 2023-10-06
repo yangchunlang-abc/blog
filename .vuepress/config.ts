@@ -2,14 +2,16 @@ import { defineUserConfig } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 
 export default defineUserConfig({
+  
   head: [
     [
         'link', // 设置 favicon.ico，注意图片放在 public 文件夹下
-        { rel: 'icon', href: 'logo.png' }
+        { rel: 'icon', href: 'pineapple.svg' }
     ]
-],
+  ], 
+ 
   dest: 'docs/.vuepress/dist',
-  base: '/blog/',
+  base: '/',
   title: "Saul's Blog",
   description: "Sual的博客",
   locales: {
@@ -18,6 +20,19 @@ export default defineUserConfig({
     }
   },
   theme: recoTheme({
+    //友链
+    friendshipLinks: [
+      {
+        title: 'vuepress-reco',
+        logo: 'https://avatars.githubusercontent.com/u/54167020?s=200&v=4',
+        link: 'https://github.com/vuepress-reco'
+      },
+      {
+        title: '异想之旅',
+        logo: 'https://www.yixiangzhilv.com/logo.png',
+        link: ' https://www.yixiangzhilv.com/'
+      },
+    ],
     //评论
     commentConfig: {
       type: 'valine',
@@ -26,11 +41,11 @@ export default defineUserConfig({
         appKey: '5zPY8ESOBS55OC9kfa96ww5K', // your appKey
         hideComments: false, // 全局隐藏评论，默认 false
         avatar: 'wavatar',
-        requiredFields:[]
+        placeholder: '欢迎大家评论!',
       },
     },
     style: "@vuepress-reco/style-default",
-    logo: "/logo.png",
+    logo: "/pineapple.svg",
     author: "Saul",
     authorAvatar: "/head.png",
     lastUpdatedText: "",
@@ -41,17 +56,11 @@ export default defineUserConfig({
       { text: "博客列表", link: "/posts", icon:'Blog'},
       { text: "时间轴", link: "/timeline", icon: 'Time' },
       { text: '留言板', link: '/docs/message-board', icon: 'Chat' },
-      { text: "友情链接", link: "/docs/friendship-link", icon: 'Link' },
+      { text: "友情链接", link: "/friendship-link", icon: 'Link' },
       { text: "关于我", link: "/docs/about-me", icon: 'User' },
     ],
     // 自动设置分类
     autoSetBlogCategories: true,
-    // 自动将分类和标签添加至头部导航条
-    // autoAddCategoryToNavbar: {
-    //   location: 1, // 默认 0
-    //   categoryText: '分类', // 默认 categories
-    //   tagText: '标签' // 默认 tags
-    // },
     autoSetSeries: true,
   }),
 
