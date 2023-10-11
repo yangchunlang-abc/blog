@@ -64,6 +64,8 @@ tags:
 ```
 
 <mark>使用row和row-revese完美解决</mark><br>
+<mark>row（默认值）：主轴为水平方向，起点在左端。</mark>
+<mark>row-reverse：主轴为水平方向，起点在右端。</mark>
 对于好友请求页的背景。
 ![添加好友页的背景.png](https://img1.imgtp.com/2023/10/09/pWW6lN74.png)
 
