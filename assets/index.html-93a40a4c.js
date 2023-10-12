@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-2bd5c580","path":"/tags/fuwuqijiekou/1/","title":"","lang":"zh-CN","frontmatter":{"layout":"Categories"},"headers":[],"git":{},"filePathRelative":null}');export{t as data};
