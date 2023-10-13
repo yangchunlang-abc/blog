@@ -14,6 +14,7 @@ tags:
  这里说明一下，无法跨域是浏览器对于用户安全的考虑，如果自己写个没有同源策略的浏览器，完全不用考虑跨域问题了。是浏览器的锅，同源策略限制了一下行为： Cookie、LocalStorage 和 IndexDB 无法读取 DOM 和 JS 对象无法获取 Ajax请求发送不出去。<br>
  jsonp是一种投机取巧的方法，用《script src=""》来做请求（前面讲浏览器不只限制那两个api），响应的报文字串会被浏览器当作脚本顺便就运行了<br>
 **目前我主要使用cors**
+#### 向express页面配置文件添加跨域代码
 <mark>CORS（Cross-Origin Resource Sharing）,跨域资源共享</mark>
 当使用XMLHttpRequest发送请求时，如果浏览器发现违反了同源策略就会自动加上一个请求头 origin；<br>
 
@@ -38,3 +39,17 @@ app.options('*', function (req, res) {
 });
 
 ```
+#### 使用cors跨域插件
+- 安装插件
+```
+ npm i cors -S
+```
+- 启用所有源跨域
+```
+const  cors = require('cors')
+ app.use(cors())
+ app.listen(8000, function () {
+   console.log('start')
+ })
+```
+当然这个还有根据添加设置跨域之类的，具体请看[官方文档](https://github.com/expressjs/cors)。
