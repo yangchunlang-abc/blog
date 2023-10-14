@@ -1,6 +1,6 @@
 ---
-title: 使用bcryptjs插件加密密码
-date: 2023/10/13
+title: 使用jsonwebtoken插件
+date: 2023/10/14
 categories:
 -  Express
 tags:
