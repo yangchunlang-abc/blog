@@ -51,7 +51,7 @@ export default defineUserConfig({
     lastUpdatedText: "",
     navbar: [
       { text: "主页", link: "/", icon: 'Home' },
-      { text: "分类", link: "/categories/VUE/1/", icon: 'Category' },
+      { text: "分类", link: "/categories/Express/1/", icon: 'Category' },
       { text: "标签", link: "/tags/javascript/1/", icon: 'Tag' },
       { text: "博客列表", link: "/posts", icon:'Blog'},
       { text: "时间轴", link: "/timeline", icon: 'Time' },
