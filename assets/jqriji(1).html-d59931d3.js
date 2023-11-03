@@ -1,0 +1,1 @@
+import{_ as r,o as t,c as a,a as e,b as c}from"./app-abc032b7.js";const o={},s=e("h2",{id:"开始学习jquery",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#开始学习jquery","aria-hidden":"true"},"#"),c(" 开始学习JQuery")],-1),_=[s];function n(i,d){return t(),a("div",null,_)}const l=r(o,[["render",n],["__file","jqriji(1).html.vue"]]);export{l as default};
